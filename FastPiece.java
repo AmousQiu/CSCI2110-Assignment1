@@ -1,8 +1,10 @@
 public class FastPiece extends Piece {
-    FastPiece(String name, String colour, int[][] position) {
-        super(name, colour, position);
+    FastPiece(String name, String colour, int row, int col) {
+        super(name, colour, row, col);
+        situation = "FP";
     }
-    public void move(String direction,int n){
 
+    public String toString() {
+        return getName() + getColour() + situation;
     }
 }
